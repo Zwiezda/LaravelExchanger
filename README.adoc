@@ -1,0 +1,15 @@
+= LaravelExchanger
+----
+
+Provides currency exchange services.
+
+Available endpoints:
+----
+GET /api/currencies - Get list of all available currencies on service
+GET /api/exchange?sourceCurrency={string}&destinationCurrency={string}&amount={float} - Exchange amount to specified currency
+
+Example request:
+GET /api/exchange?sourceCurrency=GBP&amount=160.20&destinationCurrency=PLN
+Example response body:
+{"currency":"PLN","amount":"791.14"}
+----
